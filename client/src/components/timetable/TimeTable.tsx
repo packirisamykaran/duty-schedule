@@ -99,8 +99,8 @@ export default function TimeTable() {
     <div className='timetable'>
       <div className="cq">
         <h3>CQ</h3>
-        <input type="text" />
-        <input type="text" />
+        <input type="text" placeholder='Lunch' />
+        <input type="text" placeholder='Dinner'/>
       </div>
       <div className="main">
         <div className="header row">
