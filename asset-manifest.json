@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/duty-schedule/static/css/main.0041fe7f.css",
+    "main.js": "/duty-schedule/static/js/main.fe9a08f5.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/duty-schedule/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/duty-schedule/index.html",
+    "main.0041fe7f.css.map": "/duty-schedule/static/css/main.0041fe7f.css.map",
+    "main.fe9a08f5.js.map": "/duty-schedule/static/js/main.fe9a08f5.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/duty-schedule/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0041fe7f.css",
+    "static/js/main.fe9a08f5.js"
+  ]
+}
