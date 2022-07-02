@@ -68,7 +68,7 @@ export default function TimeTable() {
       "XM": "#7109b7b0",
       "XG": "#4ccaf0a4",
       "VC":"#4362eec4",
-      "VCG": "#495057b8",
+      "VCG": "#22938fc4",
       "NIL": "red"
     }
 
