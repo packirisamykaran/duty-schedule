@@ -17,7 +17,7 @@ export default function TimeTable() {
 
   const [schedule, setSchedule] = useState([...Array(men.length)].map(e => Array(14).fill("")));
 
-  console.log(schedule)
+
 
   // Header
   let header:any = Array.from({length: 13}, (_, i) => i + 6);
@@ -38,20 +38,38 @@ export default function TimeTable() {
 
     const row = arrayRow.map((col, colNo)=>{
       if(colNo===0){
-        return <div className={'block name '+index} id={index+""+colNo}>{men[index]}</div>
+        return <div className={'block name '+index} id={index+"-"+colNo} onClick={(e)=> disableRow(e)} >{men[index]}</div>
       }
       else{
         return <div className={'block duty-block '+index} onClick={(e)=> changeBlockDuty(e)} id={index+"-"+colNo}>{schedule[index][colNo]}</div>
       }
     })
     
-    return <div key={index} className="row">{row}</div>
+    return <div key={index} className="row" id={"row"+index} >{row}</div>
   })
 
 
 
 
-  
+  const disableRow = (e: React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
+
+    const target = e.currentTarget;
+
+    const row = target.id.split("-")[0];
+    
+    const doc = document.getElementById("row"+row);
+
+    if(doc){
+      if(doc.style.backgroundColor){
+        doc.style.backgroundColor = "";
+      }
+      else{
+        doc.style.backgroundColor = dutyColors.NIL;
+      }
+    }
+
+
+  } 
 
 
     const changeDutySelector = (e:React.ChangeEvent<HTMLSelectElement>)=>{
