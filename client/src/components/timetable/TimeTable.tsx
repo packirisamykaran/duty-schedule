@@ -89,15 +89,17 @@ export default function TimeTable() {
 
       
     setSchedule(newState);
-
-      
     }
 
 
+    const date = new Date();
+    let tdyDate = date.getDate() +"/"+(date.getMonth()+1)+"/"+date.getFullYear();
 
   return (
     <div className='timetable'>
+      
       <div className="cq">
+      <div className="date">{tdyDate}</div>
         <h3>CQ</h3>
         <input type="text" placeholder='Lunch' />
         <input type="text" placeholder='Dinner'/>
@@ -115,7 +117,6 @@ export default function TimeTable() {
         <option value="VC">VC</option>
         <option value="VCG">VCG</option>
       </select>
-      
     </div>
   )
 }

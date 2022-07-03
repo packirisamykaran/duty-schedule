@@ -60,6 +60,7 @@
     flex-direction: column;
     padding-top: 4rem;
     border: none;
+    width: 200%;
 }
 
 #selector{
@@ -91,5 +92,10 @@
         font-weight: 600;
         border: 1px solid black;
         padding: 0.5rem;
+    }
+
+    .date{
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 }
