@@ -11,7 +11,7 @@ import "../style/TimeTable.css"
 export default function TimeTable() {
 
 
-  const men = ["Karan", "Wei Jie", "Quan Ren"]; 
+  const men = ["Karan", "Wei Jie", "Quan Ren", "Dani", "Ahmad", "Hadi", "Brilliant", "Danial"]; 
 
   const [selector, setselector] = useState<string>("P");
 
