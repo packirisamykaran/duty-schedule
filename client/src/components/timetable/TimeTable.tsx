@@ -62,9 +62,11 @@ export default function TimeTable() {
     if(doc){
       if(doc.style.backgroundColor){
         doc.style.backgroundColor = "";
+        doc.style.textDecoration = "";
       }
       else{
         doc.style.backgroundColor = dutyColors.NIL;
+        doc.style.textDecoration = "line-through";
       }
     }
 
